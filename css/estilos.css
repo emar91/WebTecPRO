@@ -25,7 +25,7 @@ body{
 
 .form_wrap{
     width: 800px;
-    height: 530px;
+    height: 550px;
     margin-top:20px auto;
     margin-bottom:20px auto;
     margin-left:20px auto;
@@ -122,7 +122,7 @@ form.form_contact h2{
     font-size: 25px;
 	font-weight: 600;
 	color: #303030;
-	margin-bottom: 30px;
+	margin-bottom: 0px;
 }
 
 form.form_contact .user_info{
@@ -161,9 +161,7 @@ form.form_contact input[type="button"]{
 	padding: 10px;
 	border: none;
 	border-radius: 25px;
-
-    align-self: flex-end;
-
+    align-self: center;
     color: #fff;
 	font-family: 'Open sans';
 	font-size: 16px;
@@ -173,6 +171,13 @@ form.form_contact input[type="button"]{
 
 form.form_contact input[type="button"]:hover{
     background: #3371B6;
+}
+
+#zona{
+    display: inline-flexbox;
+}
+#municipio{
+    display: inline-flexbox;
 }
 
 /* Formulario de contacto Politicas*/
@@ -255,5 +260,5 @@ h1,h2{
 	color: #fff;
 	border: 2px solid #B14141;
 	cursor: pointer;
-	float:inline-start;
+	float: right;
 }

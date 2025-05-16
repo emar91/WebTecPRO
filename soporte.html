@@ -29,27 +29,72 @@
     <form class="form_contact">
             <h2>Agenda</h2>
             <div class="user_info">
-                <label for="producto" id="producto">Producto *</label>
-                <select>
+                <label for="producto" id="producto" >Producto</label>
+                <select name="producto">
                     <option value="computadora">Computadora</option>
-                    <option value="laptop">Laptop</option>
+                    <option value="laptop" selected>Laptop</option>
                     <option value="impresora">Impresora</option>
                 </select>
-
-                <label for="phone">Telefono / Celular</label>
-                <input type="text" id="phone">
-
-                <label for="email">Correo electronico *</label>
-                <input type="text" id="email">
-
-                <label for="email">Asunto *</label>
-                <input type="text" id="asunto">
-
-
-                <label for="mensaje">Mensaje *</label>
-                <textarea id="mensaje"></textarea>
-
-                <input type="button" value="Enviar Mensaje"  id="send">
+                <br>
+                <label for="problema" id="problema">Falla</label>
+                <select name="problema">
+                    <option value="sistema">Sistema</option>
+                    <option value="fisico">Fisico</option>
+                </select>
+                <br>
+                <label for="sistema" id="sistema">Sistema</label>
+                <select>
+                    <option value="computadora">Windows</option>
+                    <option value="laptop">Mac OS</option>
+                </select>
+                <br>
+                <label for="descripcion">Descripcion</label>
+                <textarea id="mensaje" placeholder="Describa aqui el problema"></textarea>
+                <br>
+                <label for="nombre" id="nomber">Nombre y Apellido:</label>
+                <input type="text" required>
+                <label for="direccion" id="direccion">Direccion:</label>
+                <input type="text" required>
+                <div class="direccion">
+                <label for="municipio" id="municipio">Municipio</label>
+                <select id="municipio">
+                    <option value="gt">Guatemala</option>
+                    <option value="scp">Santa Catarina Pinula</option>
+                    <option value="mix">Mixco</option>
+                    <option value="fra">Fraijanes</option>
+                    <option value="ama">Amatitlan</option>
+                    <option value="vn">Villa Nueva</option>
+                    <option value="vc">Villa Caneles</option>
+                    <option value="smp">San Miguel Petapa</option>
+                </select>
+                <label for="zona" id="zona">Zona</label>
+                <select id="zona">
+                    <option value="z1">Zona 1</option>
+                    <option value="z2">Zona 2</option>
+                    <option value="z3">Zona 3</option>
+                    <option value="z4">Zona 4</option>
+                    <option value="z5">Zona 5</option>
+                    <option value="z6">Zona 6</option>
+                    <option value="z7">Zona 7</option>
+                    <option value="z8">Zona 8</option>
+                    <option value="z9">Zona 9</option>
+                    <option value="z10">Zona 10</option>
+                    <option value="z11">Zona 11</option>
+                    <option value="z12">Zona 12</option>
+                    <option value="z13">Zona 13</option>
+                    <option value="z14">Zona 14</option>
+                    <option value="z15">Zona 15</option>
+                    <option value="z16">Zona 16</option>
+                    <option value="z17">Zona 17</option>
+                    <option value="z18">Zona 18</option>               
+                    <option value="z19">Zona 19</option>
+                    <option value="z21">Zona 21</option>
+                    <option value="z24">Zona 24</option>
+                    <option value="z25">Zona 25</option>
+                </select>
+                </div>
+                <br>
+                <input type="button" value="AGENDAR"  id="send">
             </div>
      </form>
 
@@ -61,7 +106,7 @@
             <li>El plazo máximo para entrega del EQUIPO es de 72hrs hábiles, después de la Recepción del mismo.</li><br>
             <li>Si el equipo no se recoge por parte del cliente en un plazo maximo de 90 dias, este pasa a desecho, sin repercusion alguna.</li><br>
             <li>Si recibe un DICTAMEN TECNICO, este debera ser firmado por el cliente. Con esto acepta el costo de Q250 por dicho DICTAMEN, 
-                <b> relice o no dichas reparaciones</b> incluidas en el mismo.<br><br>
+                <b> realice o no dichas reparaciones</b> incluidas en el mismo.<br><br>
             <li>Reportar fallas de sistema en las 72hrs posteriores a la recepción y/o reparación del equipo</li><br>
             <li>Reportar problemas de Hardware en los 30 días calendarios según la factura de compra</li><br><br>
             </li>
