@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administrador</title>
+    <link rel="stylesheet" href="./css/estilosDashboardAdmin.css">
+    <!--icono -->
+    <link rel="shortcut icon" href="..\images\favicon.ico" />
+</head>
+<body>
+    <div class="container">
+        <section class="sidebar">
+            <h2>Administrador</h2>
+            <!--nombres,telefono,usuario,clave,rol,estado,fecha_creacion-->
+            <form class="agregarTecnico">
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" placeholder="Nombres Apellidos" required><br>
+            <label for="telefono">Telefono:</label>
+            <input type="text" id="telefono" placeholder="12345678" required><br>
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" placeholder="tus iniciales ej: acvb" required><br>
+            <label for="clave">Clave:</label>
+            <input type="text" id="clave" placeholder="contraseña" required><br>
+            <label for="rol">Rol:</label>
+            <input type="text" id="rol" required><br>
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" placeholder="Activo o Inactivo" required><br>
+            <label for="fecha_creacion">Fecha_creacion:</label>
+            <input type="datetime" id="fecha_creacion" placeholder="AAAA-MM-DD" required><br>
+            <button id="agregar">Agregar Tecnico</button>
+            <button id="reporte">Reporte * Tecnico</button>
+        </form>
+        </section>
+        <div id="barra">
+        <button class="llamar">LLAMAR</button>
+        <button class="asignar">ASIGNAR</button>
+        <button class="rechazar">RECHAZAR</button>
+        </div>
+        <h2>Órdenes Recibidas</h2>
+        <table class="tabla" id="ordenesTabla">
+            <thead>
+             <tr>
+                <th>ID</th>
+                <th>Nombres</th>
+                <th>Producto</th>
+                <th>Sistema</th>
+                <th>Falla</th>
+                <th>Direccion</th>
+                <th>Municipio</th>
+                <th>Zona</th>
+                <th>Estado</th>
+                <th>Opciones</th>
+            </tr>
+            </thead>
+        <tbody>
+            <!--AQUI LLENA el Script.js metodo cargarOrdenes();-->
+        </tbody>
+        </table>
+    </div>
+    <script src="./js/scriptAdmin.js"></script>   
+    <div id="alerta" style="margin-top: 15px;"></div>
+ 
+</body>
+</html>
